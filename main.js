@@ -122,10 +122,20 @@ document.addEventListener("click", (e) => {
   });
 });
 
-// document.querySelector(".navbar .burger-icon").onclick = () => {
-//   document.querySelector(".navbar .navbar-nav").classList.toggle("active");
-//   document.querySelectorAll(".navbar .navbar-nav .nav-link").forEach((a) => {
-//     a.style.animation = `come-from-right 2s ease`;
-//     a.style.opacity = `1`;
-//   });
-// };
+const sendEmail = () => {
+  Email.send({
+    SecureToken: "7d6c18bc-0b07-4102-b16e-d8e72acc80c2",
+    To: "supersanko2002@gmail.com",
+    From: "supersanko2002@gmail.com",
+    Subject: "My portfolio messages",
+    Body:
+      "Name: " +
+      document.getElementById("name").value +
+      "<br> Email: " +
+      document.getElementById("email").value +
+      "<br> Subject: " +
+      document.getElementById("subject").value +
+      "<br> Message: " +
+      document.getElementById("message").value,
+  }).then((message) => alert("Your message sent successfully"));
+};

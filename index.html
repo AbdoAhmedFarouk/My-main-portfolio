@@ -786,7 +786,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-12">
-            <form action="">
+            <form onsubmit="sendEmail(); reset(); return false">
               <h2
                 class="m-0 fw-bold"
                 data-aos="fade-down-left"
@@ -801,7 +801,13 @@
                 data-aos-duration="500"
                 data-aos-easing="ease-in-sine"
               >
-                <input class="w-100 rounded-2" type="text" placeholder="Name" />
+                <input
+                  class="w-100 rounded-2"
+                  required
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                />
               </div>
               <div
                 class="second-row flex-column flex-lg-row mb-3 mt-3 gap-3 d-flex"
@@ -809,17 +815,21 @@
                 <input
                   class="w-100 rounded-2"
                   type="email"
+                  id="email"
                   placeholder="Email"
                   data-aos="fade-left"
                   data-aos-duration="700"
                   data-aos-easing="ease-in-sine"
+                  required
                 />
                 <input
                   class="w-100 rounded-2"
                   type="text"
+                  id="subject"
                   placeholder="Subject"
                   data-aos="fade-left"
                   data-aos-duration="900"
+                  required
                   data-aos-easing="ease-in-sine"
                 />
               </div>
@@ -832,6 +842,7 @@
                 <textarea
                   class="w-100 rounded-2"
                   placeholder="Message"
+                  id="message"
                 ></textarea>
               </div>
               <button
@@ -929,6 +940,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
