@@ -4,7 +4,7 @@ const links = document.querySelectorAll(".nav-item .nav-link"),
   workCols = document.querySelectorAll(".work .row .col-lg-4"),
   burgerIcon = document.querySelector(".burger-icon"),
   ul = document.querySelector(".navbar .container .navbar-nav"),
-  modeIcon = document.querySelector(".mode .fa-solid"),
+  modeIcon = document.querySelector(".mode .fas"),
   form = document.querySelector("#form"),
   submitBtn = document.querySelector("#submit-btn"),
   nameInput = document.querySelector("#name"),
@@ -72,9 +72,9 @@ window.addEventListener("scroll", () => {
   }),
   (modeIcon.onclick = () => {
     let e = modeIcon.className.split(" ")[1];
-    "fa-cloud-sun" === e
-      ? modeIcon.classList.replace("fa-cloud-sun", "fa-moon")
-      : modeIcon.classList.replace("fa-moon", "fa-cloud-sun"),
+    "fa-sun" === e
+      ? modeIcon.classList.replace("fa-sun", "fa-moon")
+      : modeIcon.classList.replace("fa-moon", "fa-sun"),
       document.body.classList.toggle("dark"),
       (moodStatus = document.body.classList.contains("dark")
         ? "dark"
@@ -83,7 +83,7 @@ window.addEventListener("scroll", () => {
   }),
   "dark" === localStorage.getItem("moodStyle") &&
     (document.body.classList.add("dark"),
-    modeIcon.classList.replace("fa-cloud-sun", "fa-moon")),
+    modeIcon.classList.replace("fa-sun", "fa-moon")),
   document.addEventListener("click", (e) => {
     links.forEach((s) => {
       e.target === s &&

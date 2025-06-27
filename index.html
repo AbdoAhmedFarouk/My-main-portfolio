@@ -36,12 +36,13 @@
 
   <body>
     <nav class="navbar position-fixed w-100 navbar-expand-lg bg-body-tertiary">
-      <div class="container d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
         <div class="logo d-flex">
           <a class="navbar-brand m-0" href="#">
             <img src="./imgs/logo.png" alt="logo"
           /></a>
         </div>
+
         <ul
           class="navbar-nav text-center justify-content-center justify-content-lg-start text-lg-start flex-column flex-lg-row align-items-center"
         >
@@ -60,12 +61,10 @@
           <li class="nav-item ms-3">
             <a class="nav-link" href="#contact" data-sec="contact">Contact</a>
           </li>
-          <div
-            class="mode justify-content-center d-flex d-lg-inline-block ms-lg-4 ps-lg-3 m-0"
-          >
-            <i class="fa-solid fa-cloud-sun mt-1"></i>
-          </div>
         </ul>
+        <div class="mode justify-content-center align-items-center d-flex">
+          <i class="fas fa-moon"></i>
+        </div>
         <div
           class="burger-icon align-items-center justify-content-center d-lg-none d-flex"
         >
@@ -80,7 +79,7 @@
       >
         <div class="row d-flex align-items-center">
           <div class="col-lg-6 col-12">
-            <div class="info p-5">
+            <div class="info p-sm-5">
               <h1
                 data-aos="fade-right"
                 data-aos-duration="1200"
@@ -89,8 +88,42 @@
               >
                 <span>Hello!</span> <br />
                 I'm <span>A</span>bdelrahman <span>A</span>hmed & <br />
-                work as <span>Frontend Developer</span>
+                work as a <span>Frontend Developer</span>
               </h1>
+
+              <div
+                class="info-btns d-flex align-items-center flex-wrap justify-content-lg-start justify-content-sm-center justify-content-center"
+              >
+                <a
+                  href="/assets/Abdelrahman-Ahmed-Frontend.pdf"
+                  download
+                  class="download-cv fw-bolder px-3 py-2 rounded-2"
+                >
+                  <i class="fa-solid fa-download me-1"></i>
+                  download CV
+                </a>
+
+                <a
+                  class="contact-me fw-bolder px-3 py-2 rounded-2"
+                  href="mailto:yourname@gmail.com"
+                >
+                  <i class="fa-solid fa-paper-plane me-1"></i>
+                  contact me
+                </a>
+              </div>
+
+              <div class="social-icons">
+                <a
+                  class="social-icon"
+                  href="https://www.linkedin.com/in/abdelrahman-ahmed-576878231/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="social-icon" href="https://wa.me/201094013777"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
             </div>
           </div>
           <div
@@ -99,31 +132,19 @@
             data-aos-duration="900"
             data-aos-easing="ease-in-sine"
           >
-            <img src="imgs/landingImg.png" alt="landing-img" />
+            <img
+              class="landing-img"
+              src="imgs/landingImg.png"
+              alt="landing-img"
+            />
           </div>
-        </div>
-        <div
-          class="wavy-r position-absolute"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="900"
-        >
-          <img src="./imgs/aquarius-zodiac-sign-symbol.png" alt="wave" />
-        </div>
-        <div
-          class="wavy-l position-absolute"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="900"
-        >
-          <img src="./imgs/aquarius-zodiac-sign-symbol.png" alt="wave" />
         </div>
       </div>
     </section>
 
     <section
       id="about"
-      class="about overflow-hidden section d-lg-flex d-block align-items-center flex-column p-lg-5"
+      class="about overflow-hidden section d-lg-flex d-block align-items-center flex-column"
     >
       <div
         class="title text-center"
@@ -132,7 +153,8 @@
         data-aos-easing="ease-in-sine"
       >
         <h2 class="m-0 fw-bold">
-          About <span class="position-relative">Me</span>
+          <i class="fa-solid fa-user-circle"></i>
+          <span class="position-relative">About Me</span>
         </h2>
       </div>
       <div
@@ -154,7 +176,7 @@
               loading="lazy"
             />
           </div>
-          <div class="col-lg-7 col-12 p-5">
+          <div class="col-lg-7 p-3 col-12 align-items-center">
             <div class="info" data-aos="zoom-in-left" data-aos-duration="500">
               <h2 class="m-0"><span>A</span>bdelrahman <span>A</span>hmed</h2>
               <h4 class="my-3 fw-bold">Frontend Developer</h4>
@@ -234,7 +256,7 @@
     </section>
 
     <section
-      class="skills d-lg-block justify-content-center align-items-center d-flex flex-column section p-lg-5 overflow-hidden"
+      class="skills d-lg-block justify-content-center align-items-center d-flex flex-column section overflow-hidden"
       id="skills"
     >
       <div
@@ -244,7 +266,8 @@
         data-aos-easing="ease-in-sine"
       >
         <h2 class="m-0 fw-bold">
-          <span class="position-relative pb-2">My</span> Skills
+          <i class="fa-solid fa-laptop-code"></i>
+          <span class="position-relative">Skills</span>
         </h2>
       </div>
       <div class="container">
@@ -344,7 +367,7 @@
       </div>
     </section>
 
-    <section class="work overflow-hidden section p-lg-5" id="work">
+    <section class="work overflow-hidden section" id="work">
       <div
         class="title text-center"
         data-aos="fade-right"
@@ -352,7 +375,8 @@
         data-aos-easing="ease-in-sine"
       >
         <h2 class="m-0 fw-bold">
-          <span class="pb-2 position-relative">My</span> Works
+          <i class="fa-solid fa-diagram-project"></i>
+          <span class="position-relative"> Projects </span>
         </h2>
       </div>
       <ul
@@ -832,7 +856,7 @@
 
     <section
       id="contact"
-      class="contact overflow-hidden section p-lg-5 p-0 d-flex align-items-center flex-column"
+      class="contact overflow-hidden section d-flex align-items-center flex-column"
     >
       <div
         class="title text-center"
@@ -841,70 +865,65 @@
         data-aos-easing="ease-in-sine"
       >
         <h2 class="m-0 fw-bold">
-          Contact
-          <span class="pb-2 position-relative">Me</span>
+          <i class="fa-solid fa-envelope"></i>
+          <span class="position-relative">Contact Me</span>
         </h2>
       </div>
       <div class="container h-100 d-flex align-items-center">
         <div class="row text-lg-start text-center">
-          <div class="col-lg-6 mb-5 mb-lg-0 col-12">
-            <h2
-              class="m-0 fw-bold"
-              data-aos="fade-down-right"
-              data-aos-easing="linear"
-              data-aos-duration="700"
-            >
-              Let's discuss our project
-            </h2>
-            <div
-              class="box d-flex flex-column flex-lg-row align-items-center"
+          <div class="col text-center">
+            <a
+              class="text-center d-inline-block position-relative"
+              href="https://wa.me/201094013777"
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-easing="ease-in-sine"
             >
-              <i class="fa-solid fa-phone fs-3 me-lg-4 mb-2 m-0"></i>
-              <div class="info">
-                <h4 class="mt-4 mt-lg-0 mb-3 mb-lg-2">Phone</h4>
-                <p class="m-0">+20 109 401 3777</p>
+              <div class="contact-icon whats-app position-relative">
+                <i class="fa-brands fa-whatsapp"></i>
               </div>
-            </div>
-            <div
-              class="box d-flex align-items-center flex-column flex-lg-row"
-              data-aos="fade-right"
-              data-aos-duration="700"
-              data-aos-easing="ease-in-sine"
-            >
-              <i
-                class="fa-sharp fa-solid fa-envelope fs-3 me-lg-4 mb-2 m-0"
-              ></i>
-              <div class="info">
-                <h4 class="mt-4 mt-lg-0 mb-3 mb-lg-2">Email</h4>
-                <p class="m-lg-0">supersanko2002@gmail.com</p>
-              </div>
-            </div>
-            <div
-              class="box d-flex flex-column flex-lg-row align-items-center"
-              data-aos="fade-right"
-              data-aos-duration="900"
-              data-aos-easing="ease-in-sine"
-            >
-              <i class="fa-solid fa-location-dot fs-3 me-lg-4 mb-2 m-0"></i>
-              <div class="info">
-                <h4 class="mt-4 mt-lg-0 mb-3 mb-lg-2">Address</h4>
-                <p class="m-0">Boulaq ad dakrour, Giza, Egypt</p>
-              </div>
-            </div>
+              <h4>WhatsApp</h4>
+              <p>Chat with me directly</p>
+            </a>
           </div>
-          <div class="col-lg-6 col-12">
-            <form id="form">
-              <h2
-                class="m-0 fw-bold"
-                data-aos="fade-down-left"
-                data-aos-easing="linear"
-                data-aos-duration="700"
-              >
-                Contact me to start our project
-              </h2>
+          <div class="col text-center">
+            <a
+              class="text-center d-inline-block position-relative"
+              href="https://www.linkedin.com/in/abdelrahman-ahmed-576878231/"
+              target="_blank"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine"
+            >
+              <div class="contact-icon linked-in position-relative">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <h4>LinkedIn</h4>
+              <p>Connect professionally</p>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a
+              class="text-center d-inline-block position-relative"
+              href="mailto:yourname@gmail.com"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine"
+            >
+              <div class="contact-icon mail position-relative">
+                <i class="fa-solid fa-envelope mail"></i>
+              </div>
+              <h4>Mail</h4>
+              <p>supersanko2002@gmail.com</p>
+            </a>
+          </div>
+
+          <div class="col-12 form-wrapper">
+            <form id="form" class="text-center">
+              <h3>
+                <i class="fa-solid fa-paper-plane me-2"></i>send your message
+              </h3>
+
               <div
                 class="first-row"
                 data-aos="zoom-in"
@@ -954,6 +973,7 @@
                   placeholder="Message"
                   id="message"
                   name="message"
+                  maxlength="2000"
                   required
                 ></textarea>
               </div>
@@ -989,7 +1009,7 @@
               data-aos-duration="1200"
               data-aos-easing="ease-in-sine"
             >
-              All rights reserved 2023 &copy; Abdelrahman Ahmed.
+              &copy; 2023 All rights reserved, Eng/Abdelrahman Ahmed.
             </p>
             <span
               class="socials d-flex align-items-center justify-content-center text-center"
@@ -1048,7 +1068,9 @@
     <script src="js/bootstrap.bundle.min.js.map"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
     <script
       type="text/javascript"
