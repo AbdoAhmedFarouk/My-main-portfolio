@@ -345,7 +345,7 @@ body.dark .contact .row form :where(input, textarea)::placeholder {
   font-size: 26px;
 }
 .about .container .row .info > p {
-  color: var(--font-color);
+  color: var(--background-color);
   border-bottom: 3px solid var(--hover-color);
   font-size: 18px;
   transition: 0.3s;
